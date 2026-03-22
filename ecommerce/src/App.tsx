@@ -1,12 +1,15 @@
 import { useState } from 'react'
 import { Routes, Route } from "react-router-dom";
 import Navig from './components/Nav'
+import Header from './components/Header'
 import './App.css'
 
 
 function Home(){
 	return <>
-<Navig />
+	
+	<Header/>
+
 
 zzzzzzzzzzzzzzz
 
