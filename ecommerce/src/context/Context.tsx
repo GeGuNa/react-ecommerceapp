@@ -4,11 +4,13 @@ import {isValidJSON} from '../func/funcs'
 const ThemeContext = createContext();
 
 export const useTheme = () => {
-  const context = useContext(ThemeContext);
-  if (!context) {
-    throw new Error('');
-  }
-  return context;
+
+	const context = useContext(ThemeContext);
+	if (!context) {
+   	throw new Error('');
+	}
+	return context;
+  
 };
 
 

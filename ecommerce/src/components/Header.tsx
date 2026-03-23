@@ -17,31 +17,16 @@ return (<>
 
                
                 <nav className="hidden md:flex space-x-8 items-center">
-                    <Link to="/home" className="nav-link text-warm-800 hover:text-accent-600 font-medium transition">Home</Link>
+                    <Link to="/" className="nav-link text-warm-800 hover:text-accent-600 font-medium transition">Home</Link>
                     <Link to="/shop" className="nav-link text-warm-800 hover:text-accent-600 font-medium transition">Shop</Link>
-                    <div className="relative group">
-                        <button className="nav-link text-warm-800 hover:text-accent-600 font-medium transition flex items-center">
-                            Collections <i className="fas fa-chevron-down ml-1 text-xs"></i>
-                        </button>
-                        <div className="absolute top-full left-0 w-56 bg-white shadow-xl rounded-lg mt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0">
-                            <div className="py-2">
-                                <Link to="/" className="block px-4 py-3 hover:bg-warm-100 text-sm">Living Room</Link>
-                                <Link to="/" className="block px-4 py-3 hover:bg-warm-100 text-sm">Bedroom</Link>
-                                <Link to="/" className="block px-4 py-3 hover:bg-warm-100 text-sm">Dining</Link>
-                                <Link to="/" className="block px-4 py-3 hover:bg-warm-100 text-sm">Office</Link>
-                                <Link to="/" className="block px-4 py-3 hover:bg-warm-100 text-sm">Outdoor</Link>
-                            </div>
-                        </div>
-                    </div>
+                    <Link to="/categories" className="nav-link text-warm-800 hover:text-accent-600 font-medium transition">Category</Link>
                     <Link to="/about" className="nav-link text-warm-800 hover:text-accent-600 font-medium transition">About</Link>
                     <Link to="/contact" className="nav-link text-warm-800 hover:text-accent-600 font-medium transition">Contact</Link>
+                    <Link to="/Help" className="nav-link text-warm-800 hover:text-accent-600 font-medium transition">Help</Link>
                 </nav>
 
             
                 <div className="hidden md:flex items-center space-x-6">
-                    <button className="text-warm-800 hover:text-accent-600 transition">
-                        <i className="fas fa-search text-lg"></i>
-                    </button>
                     <button className="text-warm-800 hover:text-accent-600 transition relative">
                         <i className="fas fa-heart text-lg"></i>
                         <span className="absolute -top-2 -right-2 bg-accent-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">3</span>
@@ -80,14 +65,6 @@ return (<>
                 <nav className="space-y-4">
                     <Link to="/home" className="block text-lg font-medium text-warm-800 hover:text-accent-600 py-2 border-b border-warm-200" >Home</Link>
                     <Link to="/shop" className="block text-lg font-medium text-warm-800 hover:text-accent-600 py-2 border-b border-warm-200" >Shop All</Link>
-                    <div className="space-y-2 py-2 border-b border-warm-200">
-                        <p className="text-sm text-warm-300 uppercase tracking-wider font-semibold">Collections</p>
-                        <Link to="/" className="block text-warm-800 hover:text-accent-600 pl-4">Living Room</Link>
-                        <Link to="/" className="block text-warm-800 hover:text-accent-600 pl-4">Bedroom</Link>
-                        <Link to="/" className="block text-warm-800 hover:text-accent-600 pl-4">Dining</Link>
-                        <Link to="/" className="block text-warm-800 hover:text-accent-600 pl-4">Office</Link>
-                        <Link to="/" className="block text-warm-800 hover:text-accent-600 pl-4">Outdoor</Link>
-                    </div>
                     <Link to="/about" className="block text-lg font-medium text-warm-800 hover:text-accent-600 py-2 border-b border-warm-200" >About Us</Link>
                     <Link to="/contact" className="block text-lg font-medium text-warm-800 hover:text-accent-600 py-2 border-b border-warm-200" >Contact</Link>
                 </nav>
@@ -101,6 +78,7 @@ return (<>
                 </div>
             </div>
         </div>
+
         
         <div id="mobileOverlay" className="fixed inset-0 bg-black/50 z-40 hidden md:hidden"></div>
     </header>

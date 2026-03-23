@@ -1,4 +1,6 @@
+
 export function isValidJSON(text) {
+
   if (typeof text !== "string" || text.trim() === "") {
     return false;
   }
@@ -9,4 +11,5 @@ export function isValidJSON(text) {
   } catch (e) {
     return false; 
   }
+  
 }
