@@ -40,13 +40,6 @@ return (<>
             <div className="product-info">
               <div className="product-title">{product.name}</div>
               <div className="product-price">{product.price}</div>
-              <button
-                className="add-to-cart"
-                data-id={product.id}
-                // you can add an onClick handler here
-              >
-                <i className="fas fa-cart-plus"></i> Add to Cart
-              </button>
             </div>
           </div>
           ))}
