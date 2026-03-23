@@ -3,75 +3,59 @@ import { Link } from "react-router-dom";
 
 export default function ProductsList() {
 
+const qz = [
+{name: 'Classic White Sneakers',alt:'Classic White Sneakers', pic:'https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=600&h=750&fit=crop', price: '$59.99'},{name: 'Classic White Sneakers',alt:'Classic White Sneakers', pic:'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=600&h=750&fit=crop', price: '$59.99'},{name: 'Classic White Sneakers',alt:'Classic White Sneakers', pic:'https://images.unsplash.com/photo-1598554747436-c9293d6a588f?w=600&h=750&fit=crop', price: '$59.99'},{name: 'Classic White Sneakers',alt:'Classic White Sneakers', pic:'https://images.unsplash.com/photo-1598554747436-c9293d6a588f?w=600&h=750&fit=crop', price: '$59.99'},{name: 'Classic White Sneakers',alt:'Classic White Sneakers', pic:'https://images.unsplash.com/photo-1598554747436-c9293d6a588f?w=600&h=750&fit=crop', price: '$59.99'},{name: 'Classic White Sneakers',alt:'Classic White Sneakers', pic:'https://images.unsplash.com/photo-1598554747436-c9293d6a588f?w=600&h=750&fit=crop', price: '$59.99'},{name: 'Classic White Sneakers',alt:'Classic White Sneakers', pic:'https://images.unsplash.com/photo-1598554747436-c9293d6a588f?w=600&h=750&fit=crop', price: '$59.99'},{name: 'Classic White Sneakers',alt:'Classic White Sneakers', pic:'https://images.unsplash.com/photo-1598554747436-c9293d6a588f?w=600&h=750&fit=crop', price: '$59.99'},{name: 'Classic White Sneakers',alt:'Classic White Sneakers', pic:'https://images.unsplash.com/photo-1598554747436-c9293d6a588f?w=600&h=750&fit=crop', price: '$59.99'}
+];
+
 return (<>
+<section className="section">
 
-<div class="products-grid" id="home-products-grid">
-                <div class="product-card">
-                    <img class="product-img" src="https://picsum.photos/id/20/280/220" alt="Classic White Sneakers" loading="lazy"/>
-                    <div class="product-info">
-                        <div class="product-title">Classic White Sneakers</div>
-                        <div class="product-price">$59.99</div>
-                        <button class="add-to-cart" data-id="1">
-                            <i class="fas fa-cart-plus"></i> Add to Cart
-                        </button>
-                    </div>
-                </div>
-            
-                <div class="product-card">
-                    <img class="product-img" src="https://picsum.photos/id/1/280/220" alt="Smart Watch Pro" loading="lazy"/>
-                    <div class="product-info">
-                        <div class="product-title">Smart Watch Pro</div>
-                        <div class="product-price">$199.99</div>
-                        <button class="add-to-cart" data-id="2">
-                            <i class="fas fa-cart-plus"></i> Add to Cart
-                        </button>
-                    </div>
-                </div>
-            
-                <div class="product-card">
-                    <img class="product-img" src="https://picsum.photos/id/0/280/220" alt="Noise Cancelling Headphones" loading="lazy"/>
-                    <div class="product-info">
-                        <div class="product-title">Noise Cancelling Headphones</div>
-                        <div class="product-price">$89.99</div>
-                        <button class="add-to-cart" data-id="3">
-                            <i class="fas fa-cart-plus"></i> Add to Cart
-                        </button>
-                    </div>
-                </div>
-            
-                <div class="product-card">
-                    <img class="product-img" src="https://picsum.photos/id/26/280/220" alt="Premium Cotton T-Shirt" loading="lazy"/>
-                    <div class="product-info">
-                        <div class="product-title">Premium Cotton T-Shirt</div>
-                        <div class="product-price">$24.99</div>
-                        <button class="add-to-cart" data-id="4">
-                            <i class="fas fa-cart-plus"></i> Add to Cart
-                        </button>
-                    </div>
-                </div>
-            
-                <div class="product-card">
-                    <img class="product-img" src="https://picsum.photos/id/100/280/220" alt="Urban Backpack" loading="lazy"/>
-                    <div class="product-info">
-                        <div class="product-title">Urban Backpack</div>
-                        <div class="product-price">$79.99</div>
-                        <button class="add-to-cart" data-id="5">
-                            <i class="fas fa-cart-plus"></i> Add to Cart
-                        </button>
-                    </div>
-                </div>
-            
-                <div class="product-card">
-                    <img class="product-img" src="https://picsum.photos/id/96/280/220" alt="Polarized Sunglasses" loading="lazy"/>
-                    <div class="product-info">
-                        <div class="product-title">Polarized Sunglasses</div>
-                        <div class="product-price">$49.99</div>
-                        <button class="add-to-cart" data-id="6">
-                            <i class="fas fa-cart-plus"></i> Add to Cart
-                        </button>
-                    </div>
-                </div>
+
+<div className="DvContq">
+
+
+<div className="section-header">
+        <span className="section-header__tagline">Curated Selections</span>
+        <h2 className="section-header__title">Shop by Collection</h2>
+        <p className="section-header__description">
+          Explore our carefully curated collections, each piece designed to complement your personal style.
+        </p>
+      </div>
+
+<div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-6" id="home-products-grid">
+       
+       
+      {qz.map((product, index) => (
+        <div key={index} className="product-card">
+        
+        <div class="product-card__image-wrapper">
+            <img
+              className="product-card__image"
+              src={product.pic}
+              alt={product.alt}
+              loading="lazy"
+            />
+            <span class="badge badge--new PabsTop1">New</span>
+         </div>
+            <div className="product-info">
+              <div className="product-title">{product.name}</div>
+              <div className="product-price">{product.price}</div>
+              <button
+                className="add-to-cart"
+                data-id={product.id}
+                // you can add an onClick handler here
+              >
+                <i className="fas fa-cart-plus"></i> Add to Cart
+              </button>
             </div>
+          </div>
+          ))}
+               
+   </div>
 
+
+</div>
+
+</section>
 </>)
 }
