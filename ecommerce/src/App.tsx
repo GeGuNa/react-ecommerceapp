@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import { Routes, Route, Link } from "react-router-dom";
 import { useTheme } from './context/Context'
-
 import Navig from './components/Nav'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import ProductsList from './components/Productslist'
+
+
 import './App.css'
 
 
@@ -73,7 +75,7 @@ const qzstrng = JSON.stringify(userObject)
     </section>
 
 
-
+<ProductsList />
 
 
 
