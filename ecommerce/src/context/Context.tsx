@@ -1,5 +1,5 @@
-import { useState, createContext, useContext } from 'react'
-
+import { useState, createContext, useContext, useEffect } from 'react'
+import {isValidJSON} from '../func/funcs'
 
 const ThemeContext = createContext();
 
@@ -16,37 +16,68 @@ export const useTheme = () => {
 
 export const ThemeProvider = ({ children }) => {
 
+const [DomLoaded, setDomLoaded] = useState(false);
 
 const [user, setUser] = useState(() => {
   const savedUser = localStorage.getItem('user');
-  return savedUser ? JSON.parse(savedUser) : { name: '', email: '', isLoggedIn: false };
+ // return savedUser || '{"name": "", "email": "", "isLoggedIn": false}';
+ 
+ return savedUser
+
+});
+
+/*const [Authorized, setAuthorized] = useState(() => {
+
+});
+*/
+
+const [theme, setTheme] = useState(() => {
+  const z1 = localStorage.getItem('theme');
+  return z1 ? z1 : "light";
 });
 
 
-const [DomLoaded, setDomLoaded] = useState(false);
-const [theme, setTheme] = useState('system');
+useEffect(()=> {
+   setDomLoaded(true);
+}, [])
 
 
 useEffect(() => {
 
-   const storedTheme = localStorage.getItem('theme');
+   if (DomLoaded) {
    
-   if (storedTheme && ['light', 'dark', 'system'].includes(storedTheme)) {
-   	setTheme(theme);
+   	if (['light', 'dark', 'system'].includes(theme)) {
+   		setTheme(theme);
+   		localStorage.setItem('theme', theme);
+   	}
+   
    }
    
-   setDomLoaded(true);
-   
-}, []);
+}, [theme, DomLoaded])
 
 
 useEffect(() => {
-   if (!DomLoaded) return;
 
-}, [theme, DomLoaded]);
+  if (DomLoaded && isValidJSON(user)) {
+  
+
+		const qzuz = user
+		const obj = qzuz;
+
+		localStorage.setItem('user', obj);
+		
+	}
+
+}, [user, DomLoaded])
+
+
+const valu1q = {
+	setUser, user,
+	theme, setTheme
+};
 
 return (
-	<ThemeContext value={}>
+	<ThemeContext value={valu1q}>
 		{children}
 	</ThemeContext>
 )

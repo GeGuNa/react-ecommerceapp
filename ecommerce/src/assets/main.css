@@ -60,3 +60,25 @@
             0%, 100% { transform: scale(1); }
             50% { transform: scale(1.1); }
         }
+
+
+
+
+
+
+
+
+
+
+
+
+  .hero-pattern {
+            background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        
+        
+        .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
