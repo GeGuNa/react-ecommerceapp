@@ -470,6 +470,10 @@ background: var(--accent);
 cursor:pointer;
 }
 
+svg {
+stroke: currentcolor;
+}
+
 .contact-method:hover {
     border-color: var(--accent);
     box-shadow: var(--shadow-sm);
