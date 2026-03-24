@@ -34,11 +34,9 @@ return (<>
 <div className="DvContq">
 
 
-	
-	
+
 
 <div className="about-grid">
-
 
             <div className="relative">
                 <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800=80" alt="Office"/>
