@@ -8,6 +8,7 @@ import ProductsList from './components/Productslist'
 import JustArrived from './components/JustArrived'
 import ContactUs from './components/ContactUs'
 import AboutUs from './components/About'
+import Careers from './components/Careers'
 
 
 
@@ -125,7 +126,7 @@ function App() {
      		<Route path="/" element={<Home/>} />
      		<Route path="/contact" element={<ContactUs />} />
      		<Route path="/about" element={<AboutUs />} />
-     	     		
+     	   <Route path="/careers" element={<Careers />} />	
      		
      		
      		<Route path="*" element={<Error/>} />

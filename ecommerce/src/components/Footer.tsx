@@ -14,7 +14,7 @@ return (<>
                     <ul>
                         <li><Link to="/">Our Story</Link></li>
                         <li><Link to="/">Sustainability</Link></li>
-                        <li><Link to="/">Careers</Link></li>
+                        <li><Link to="/careers">Careers</Link></li>
                         <li><Link to="/">Press</Link></li>
                         <li><Link to="/">Stores</Link></li>
                     </ul>

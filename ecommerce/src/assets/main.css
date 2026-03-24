@@ -432,6 +432,10 @@ footer { background-color: #fff; border-top: 1px solid var(--border); padding: 4
 color:#fff;
 }
 
+i {
+    color: rgb(139 111 71 / 1);
+}
+
  img {
     display: block;
     vertical-align: middle;
@@ -459,6 +463,11 @@ img, video {
 	--bg-elevated: #ffffff;
 	--fg: #1a1a1a;
 	--radius: 12px;
+}
+
+.btn21 {
+background: var(--accent);
+cursor:pointer;
 }
 
 .contact-method:hover {
