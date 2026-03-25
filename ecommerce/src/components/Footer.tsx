@@ -24,9 +24,9 @@ return (<>
                 <div className="footer-col">
                     <h4>Help</h4>
                     <ul>
-                        <li><Link to="/">Contact Us</Link></li>
+                        <li><Link to="/contact">Contact Us</Link></li>
                         <li><Link to="/">Shipping Info</Link></li>
-                        <li><Link to="/">Returns</Link></li>
+                        <li><Link to="/return">Returns</Link></li>
                         <li><Link to="/">Size Guide</Link></li>
                         <li><Link to="/">FAQ</Link></li>
                     </ul>

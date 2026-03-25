@@ -1,5 +1,6 @@
-import { useState } from 'react'
-import { Routes, Route, Link } from "react-router-dom";
+import { useState, useEffect } from 'react'
+import { Routes, Route, Link, useLocation } from "react-router-dom";
+
 import { useTheme } from './context/Context'
 import Navig from './components/Nav'
 import Header from './components/Header'
@@ -9,11 +10,23 @@ import JustArrived from './components/JustArrived'
 import ContactUs from './components/ContactUs'
 import AboutUs from './components/About'
 import Careers from './components/Careers'
-
-
+import Returns from './components/Returns'
 
 
 import './App.css'
+
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+   // window.scrollTo(0, 0);
+ //  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  }, [pathname]);
+
+  return null;
+}
 
 
 function Home() {
@@ -121,17 +134,21 @@ function Error(){
 function App() {
   const [count, setCount] = useState(0)
 
-  return (
+  return (<>
+  
+ {/* <ScrollToTop />*/}
+  
+  
   	<Routes>
      		<Route path="/" element={<Home/>} />
      		<Route path="/contact" element={<ContactUs />} />
      		<Route path="/about" element={<AboutUs />} />
      	   <Route path="/careers" element={<Careers />} />	
-     		
+     		<Route path="/returns" element={<Returns />} />	
      		
      		<Route path="*" element={<Error/>} />
   	</Routes>
- )
+ </>)
 }
 
 export default App

@@ -453,6 +453,12 @@ img, video {
 }
 
 
+    
+    .btn21:hover {
+    background: var(--accent-hover);
+    }
+    
+    
 :root {
 	--accent: #b8860b;
 	--accent-hover: #9a7209;
@@ -463,6 +469,8 @@ img, video {
 	--bg-elevated: #ffffff;
 	--fg: #1a1a1a;
 	--radius: 12px;
+    --shadow: 0 4px 6px -1px rgba(13, 148, 136, 0.1), 0 2px 4px -1px rgba(13, 148, 136, 0.06);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn21 {
@@ -473,6 +481,32 @@ cursor:pointer;
 svg {
 stroke: currentcolor;
 }
+
+.cz1q {
+max-width: 600px; margin: 1rem auto;
+}
+
+.cz2q { margin: 0 auto 1.5rem; }
+.cz3q {margin-top: 3rem; text-align: center; padding: 3rem;}
+
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: rgba(13, 148, 136, 0.3);
+}
+
+.about-card {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(13, 148, 136, 0.1);
+    transition: var(--transition);
+}
+
+
+
 
 .contact-method:hover {
     border-color: var(--accent);
@@ -558,7 +592,25 @@ position: absolute; top: 16px; left: 16px;
     border: 1px solid var(--text-main);
     color: var(--text-main);
 }
+.bgsecz {
+    background-color: rgb(212 197 176 / 0.3);
+}
 
+.border-gray-300 {
+    border-color: rgb(209 213 219);
+}
+
+.btqnblckq {
+    background: var(--color-accent);
+}
+
+.btqnblckq:hover {
+    background: var(--color-accent-dark);
+}
+
+.btqnblckqzrqq:hover {
+    border-color: var(--color-accent-dark);
+}
 
 .btn {
     display: inline-block;
@@ -584,7 +636,45 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     font-weight: 500;
     line-height: 1.2;
-    color: var(--color-primary);
+    color: #000;
+}
+
+
+
+
+.mgridq {
+	display:grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap:30px;
+}
+
+@media (max-width: 767px) {
+.mgridq { grid-template-columns: repeat(1, 1fr);}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+.mgridq { grid-template-columns: repeat(2, 1fr);}
+}
+
+@media (min-width: 1024px) and (max-width: 1600px)  {
+ .mgridq { grid-template-columns: repeat(3, 1fr);}
+}
+
+@media (min-width: 1601px)  {
+ .mgridq { grid-template-columns: repeat(4, 1fr);}
+}
+
+
+
+.bger1 {
+margin-top: 81px;
+background-color: rgb(44 62 51);
+}
+
+.bger1 {
+	h2,p {
+		color:#fff;
+	}
 }
 
 .products-grid {

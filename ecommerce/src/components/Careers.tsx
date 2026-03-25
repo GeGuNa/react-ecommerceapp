@@ -68,28 +68,28 @@ return (<>
 
 
 
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
-                <div class="text-center p-8 bg-white rounded-2xl shadow-lg">
-                    <i class="fas fa-heart text-4xl text-primary mb-4"></i>
-                    <h3 class="font-serif text-xl font-bold mb-2">Health &amp; Wellness</h3>
-                    <p class="text-gray-600">Comprehensive health insurance and wellness programs</p>
+<div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+                <div className="text-center p-8 bg-white rounded-2xl shadow-lg">
+                    <i className="fas fa-heart text-4xl text-primary mb-4"></i>
+                    <h3 className="font-serif text-xl font-bold mb-2">Health &amp; Wellness</h3>
+                    <p className="text-gray-600">Comprehensive health insurance and wellness programs</p>
                 </div>
-                <div class="text-center p-8 bg-white rounded-2xl shadow-lg">
-                    <i class="fas fa-hands text-4xl text-primary mb-4"></i>
-                    <h3 class="font-serif text-xl font-bold mb-2">Growth Opportunities</h3>
-                    <p class="text-gray-600">Professional development and career advancement</p>
+                <div className="text-center p-8 bg-white rounded-2xl shadow-lg">
+                    <i className="fas fa-hands text-4xl text-primary mb-4"></i>
+                    <h3 className="font-serif text-xl font-bold mb-2">Growth Opportunities</h3>
+                    <p className="text-gray-600">Professional development and career advancement</p>
                 </div>
-                <div class="text-center p-8 bg-white rounded-2xl shadow-lg">
-                    <i class="fas fa-balance-scale text-4xl text-primary mb-4"></i>
-                    <h3 class="font-serif text-xl font-bold mb-2">Work-Life Balance</h3>
-                    <p class="text-gray-600">Flexible schedules and generous PTO</p>
+                <div className="text-center p-8 bg-white rounded-2xl shadow-lg">
+                    <i className="fas fa-balance-scale text-4xl text-primary mb-4"></i>
+                    <h3 className="font-serif text-xl font-bold mb-2">Work-Life Balance</h3>
+                    <p className="text-gray-600">Flexible schedules and generous PTO</p>
                 </div>
             </div>
 
 
 
 
-<h2 class="font-serif text-3xl font-bold mb-8">Open Positions</h2>
+<h2 className="font-serif text-3xl font-bold mb-8">Open Positions</h2>
 
 
 		<div className="space-y-4">
@@ -113,7 +113,16 @@ return (<>
 		</div>
 		
 
-
+<div className="about-card cz3q">
+            <div className="about-icon cz2q">
+                <i className="fas fa-gift text-4xl text-primary mb-4"></i>
+            </div>
+            <h3>Benefits &amp; Perks</h3>
+            <p className="cz1q text-gray-600">
+                Competitive salaries, health insurance, flexible remote work options, 
+                professional development budget, and quarterly team retreats.
+            </p>
+        </div>
 
 
             
