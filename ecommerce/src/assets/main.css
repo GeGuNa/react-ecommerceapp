@@ -624,6 +624,7 @@ position: absolute; top: 16px; left: 16px;
 
 .btn3q21q:hover { background-color: var(--text-main); color:#fff;  cursor:pointer;}
 
+.inputFl {background: #fff;} 
 .btn {
     display: inline-block;
     padding: 14px 32px;

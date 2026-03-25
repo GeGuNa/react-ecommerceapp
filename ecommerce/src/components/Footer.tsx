@@ -12,7 +12,7 @@ return (<>
    			 <div className="footer-col">
                     <h4>About</h4>
                     <ul>
-                        <li><Link to="/">Our Story</Link></li>
+                        <li><Link to="/OurStory">Our Story</Link></li>
                         <li><Link to="/Sustainability">Sustainability</Link></li>
                         <li><Link to="/careers">Careers</Link></li>
                         <li><Link to="/">Press</Link></li>
