@@ -13,10 +13,10 @@ return (<>
                     <h4>About</h4>
                     <ul>
                         <li><Link to="/">Our Story</Link></li>
-                        <li><Link to="/">Sustainability</Link></li>
+                        <li><Link to="/Sustainability">Sustainability</Link></li>
                         <li><Link to="/careers">Careers</Link></li>
                         <li><Link to="/">Press</Link></li>
-                        <li><Link to="/">Stores</Link></li>
+                        <li><Link to="/Stores">Stores</Link></li>
                     </ul>
                 </div>
                 
@@ -25,7 +25,7 @@ return (<>
                     <h4>Help</h4>
                     <ul>
                         <li><Link to="/contact">Contact Us</Link></li>
-                        <li><Link to="/">Shipping Info</Link></li>
+                        <li><Link to="/Shipping">Shipping Info</Link></li>
                         <li><Link to="/return">Returns</Link></li>
                         <li><Link to="/">Size Guide</Link></li>
                         <li><Link to="/help">FAQ</Link></li>

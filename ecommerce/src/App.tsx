@@ -16,6 +16,7 @@ import Faq from './components/Faq'
 import Favourite from './components/Saved'
 import ShippingInfo from './components/ShippingInfo'
 import Sustainability from './components/Sustainability'
+import Stores from './components/Stores'
 
 
 
@@ -156,7 +157,8 @@ function App() {
      		<Route path="/Saved" element={<Favourite />} />	
      		<Route path="/Shipping" element={<ShippingInfo />} />	
      		<Route path="/Sustainability" element={<Sustainability />} />
-     		
+     		<Route path="/Stores" element={<Stores />} />
+     		     		
      		
      		<Route path="*" element={<Error/>} />
   	</Routes>

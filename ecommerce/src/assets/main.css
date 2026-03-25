@@ -622,6 +622,8 @@ position: absolute; top: 16px; left: 16px;
     border-color: var(--color-accent-dark);
 }
 
+.btn3q21q:hover { background-color: var(--text-main); color:#fff;  cursor:pointer;}
+
 .btn {
     display: inline-block;
     padding: 14px 32px;
