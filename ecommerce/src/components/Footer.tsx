@@ -28,7 +28,7 @@ return (<>
                         <li><Link to="/">Shipping Info</Link></li>
                         <li><Link to="/return">Returns</Link></li>
                         <li><Link to="/">Size Guide</Link></li>
-                        <li><Link to="/">FAQ</Link></li>
+                        <li><Link to="/help">FAQ</Link></li>
                     </ul>
                 </div>
                 <div className="footer-col">
