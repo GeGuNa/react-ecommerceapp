@@ -665,9 +665,21 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 5px;
 }
 
-.pclqbtnq:hover {
-background:var(--accent-hover);
+.pclqbtnqAdd, .pclqbtnqCRT {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    background: var(--accent);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor:pointer;
 }
+
+.pclqbtnqCRT {
+background: var(--color-accent);
+}
+
 
 .pIcoqnz{
     max-width: 100%;

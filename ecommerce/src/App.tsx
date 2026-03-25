@@ -13,6 +13,7 @@ import Careers from './components/Careers'
 import Returns from './components/Returns'
 import Cart from './components/Cart'
 import Faq from './components/Faq'
+import Favourite from './components/Saved'
 
 
 import './App.css'
@@ -149,7 +150,7 @@ function App() {
      		<Route path="/returns" element={<Returns />} />	
       	<Route path="/cart" element={<Cart />} />	 		
      		<Route path="/help" element={<Faq />} />	
-     		
+     		<Route path="/Saved" element={<Favourite />} />	
      		<Route path="*" element={<Error/>} />
   	</Routes>
  </>)
