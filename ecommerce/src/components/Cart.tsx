@@ -61,7 +61,7 @@ export default function Cart() {
     (sum, item) => sum + item.price * item.quantity,
     0
   );
-
+ 
   const shipping = subtotal > 500 ? 0 : 15.0;
   const tax = subtotal * 0.08;
   const total = subtotal + shipping + tax;
