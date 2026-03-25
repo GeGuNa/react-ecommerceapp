@@ -14,7 +14,7 @@ import Returns from './components/Returns'
 import Cart from './components/Cart'
 import Faq from './components/Faq'
 import Favourite from './components/Saved'
-
+import ShippingInfo from './components/ShippingInfo'
 
 import './App.css'
 
@@ -151,6 +151,8 @@ function App() {
       	<Route path="/cart" element={<Cart />} />	 		
      		<Route path="/help" element={<Faq />} />	
      		<Route path="/Saved" element={<Favourite />} />	
+     		<Route path="/Shipping" element={<ShippingInfo />} />	
+     		
      		<Route path="*" element={<Error/>} />
   	</Routes>
  </>)
