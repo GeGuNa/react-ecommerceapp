@@ -11,6 +11,7 @@ import ContactUs from './components/ContactUs'
 import AboutUs from './components/About'
 import Careers from './components/Careers'
 import Returns from './components/Returns'
+import Cart from './components/Cart'
 
 
 import './App.css'
@@ -145,6 +146,9 @@ function App() {
      		<Route path="/about" element={<AboutUs />} />
      	   <Route path="/careers" element={<Careers />} />	
      		<Route path="/returns" element={<Returns />} />	
+      	<Route path="/cart" element={<Cart />} />	
+     		    		
+     		
      		
      		<Route path="*" element={<Error/>} />
   	</Routes>

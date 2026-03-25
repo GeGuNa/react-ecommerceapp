@@ -54,8 +54,8 @@ return (<>
 	
 	
 	<div className="PageHero bger1">
-      	<h2 className="section-header__title">Returns & Refunds</h2>
-      	<p className="section-header__description">
+      	<h2 className="PHSize mb-4">Returns & Refunds</h2>
+      	<p className="PSizeText">
          	Hassle-free returns within 30 days. Your satisfaction is our priority.
       	</p>
 	</div>
