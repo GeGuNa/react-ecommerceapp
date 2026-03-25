@@ -1,7 +1,17 @@
 import { useState } from 'react'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Header() {
+ 
+  const navigate = useNavigate();
+
+
+  const handleRouting = (url: string) => {
+    navigate(url);
+  };
+
+
+
 
 return (<>
 <header className="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300" id="header">
@@ -31,10 +41,12 @@ return (<>
                         <i className="fas fa-heart text-lg"></i>
                         <span className="absolute -top-2 -right-2 bg-accent-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">3</span>
                     </button>
-                    <button className="text-warm-800 hover:text-accent-600 transition relative">
+                    <button onClick={()=> handleRouting('/cart') } className="text-warm-800 hover:text-accent-600 transition relative pointer">
                         <i className="fas fa-shopping-bag text-lg"></i>
                         <span className="absolute -top-2 -right-2 bg-warm-900 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center cart-badge" id="cartCount">2</span>
                     </button>
+                    
+                    
                     <button className="text-warm-800 hover:text-accent-600 transition">
                         <i className="fas fa-user text-lg"></i>
                     </button>
