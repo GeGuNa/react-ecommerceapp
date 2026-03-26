@@ -29,7 +29,7 @@ return (<>
                 <nav className="hidden md:flex space-x-8 items-center">
                     <Link to="/" className="nav-link text-warm-800 hover:text-accent-600 font-medium transition">Home</Link>
                     <Link to="/shop" className="nav-link text-warm-800 hover:text-accent-600 font-medium transition">Shop</Link>
-                    <Link to="/categories" className="nav-link text-warm-800 hover:text-accent-600 font-medium transition">Category</Link>
+                    <Link to="/Category" className="nav-link text-warm-800 hover:text-accent-600 font-medium transition">Category</Link>
                     <Link to="/about" className="nav-link text-warm-800 hover:text-accent-600 font-medium transition">About</Link>
                     <Link to="/contact" className="nav-link text-warm-800 hover:text-accent-600 font-medium transition">Contact</Link>
                     <Link to="/Help" className="nav-link text-warm-800 hover:text-accent-600 font-medium transition">Help</Link>

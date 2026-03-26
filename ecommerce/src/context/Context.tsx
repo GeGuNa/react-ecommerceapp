@@ -2,7 +2,7 @@ import { useState, createContext, useContext, useEffect } from 'react'
 import {isValidJSON} from '../func/funcs'
 
 const ThemeContext = createContext();
-
+ 
 export const useTheme = () => {
 
 	const context = useContext(ThemeContext);

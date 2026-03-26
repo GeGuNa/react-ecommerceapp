@@ -18,6 +18,7 @@ import ShippingInfo from './components/ShippingInfo'
 import Sustainability from './components/Sustainability'
 import Stores from './components/Stores'
 import OurStory from './components/OurStory'
+import Category from './components/Category'
 
 
 
@@ -160,7 +161,8 @@ function App() {
      		<Route path="/Sustainability" element={<Sustainability />} />
      		<Route path="/Stores" element={<Stores />} />
       	<Route path="/OurStory" element={<OurStory />} />
-     		      		     		
+       	<Route path="/Category" element={<Category />} />
+     		     		      		     		
      		
      		<Route path="*" element={<Error/>} />
   	</Routes>
