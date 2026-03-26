@@ -49,14 +49,36 @@ return (<>
                 <i className="fab fa-twitter"></i>
                 <i className="fab fa-facebook-f"></i>
             </div>
-            <p className="mt-3">hello@admin.com</p>
+
+            
+            
         </div>    
                 
                 
+                
+                
+                
+                
             </div>
-            <div className="copyright">
+            
+<div className="flex  flex-wrap justify-between flxbtopq1">            
+            
+            <div className="flxzqprdq">
                 © 2026 Ecmrc — Modern commerce. All rights reserved.
             </div>
+            
+          
+           <div class="pt-6">
+      	 	 <div class="flex items-center gap-4 text-2xl text-gray-400">
+        			<i class="fab fa-cc-visa"></i>
+        			<i class="fab fa-cc-mastercard"></i>
+        			<i class="fab fa-cc-amex"></i>
+        			<i class="fab fa-paypal"></i>
+        		</div>
+       	 </div>          
+ </div>           
+            
+            
         </div>
     </footer>
 

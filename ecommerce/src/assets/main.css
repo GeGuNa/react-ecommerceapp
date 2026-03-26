@@ -630,6 +630,16 @@ position: absolute; top: 16px; left: 16px;
 .bg-whTiq { background: #fff; }
 .mtqqaz  { margin-top:5rem; margin-bottom:5rem; }
 
+.flxzqprdq {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    padding-top: 2rem;
+}
+
+.flxbtopq1 {
+ border-top: 1px solid var(--border);
+}
+
 .btn {
     display: inline-block;
     padding: 14px 32px;
