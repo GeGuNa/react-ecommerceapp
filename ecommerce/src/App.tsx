@@ -20,6 +20,9 @@ import Stores from './components/Stores'
 import OurStory from './components/OurStory'
 import Category from './components/Category'
 import ProductListing from './components/List'
+import AllProducts from './components/AllProducts'
+import Collections from './components/Collections'
+import BestSellers from './components/BestSellers'
 
 
 
@@ -164,7 +167,12 @@ function App() {
       	<Route path="/OurStory" element={<OurStory />} />
        	<Route path="/Category" element={<Category />} />
        	<Route path="/Products" element={<ProductListing />} />
-     		     		     		      		     		
+        	<Route path="/AllProducts" element={<AllProducts />} />
+         	<Route path="/Collections" element={<Collections />} />
+     		 <Route path="/BestSellers" element={<BestSellers />} />
+     		         		       		     		     		      		     		
+     		
+     		
      		
      		<Route path="*" element={<Error/>} />
   	</Routes>

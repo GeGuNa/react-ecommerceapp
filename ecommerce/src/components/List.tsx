@@ -124,7 +124,7 @@ const products: Product[] = [
     description: 'Pair of minimalist nightstands with drawer.',
   },
 ];
-
+ 
 
 const categories = [
   { id: 1, name: 'Living Room' },

@@ -37,7 +37,7 @@ return (<>
                         <li><Link to="/">All Products</Link></li>
                         <li><Link to="/">Collections</Link></li>
                         <li><Link to="/">New Arrivals</Link></li>
-                        <li><Link to="/">Best Sellers</Link></li>
+                        <li><Link to="/BestSellers">Best Sellers</Link></li>
                     </ul>
                 </div>
                 

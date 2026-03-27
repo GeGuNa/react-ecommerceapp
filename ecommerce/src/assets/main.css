@@ -629,7 +629,15 @@ position: absolute; top: 16px; left: 16px;
 .clrBdflq {color:#000;}
 .bg-whTiq { background: #fff; }
 .mtqqaz  { margin-top:5rem; margin-bottom:5rem; }
+.mrg81frhero {     margin-top: 81px; }
 
+.mrbtsqq {margin-bottom:2rem;} 
+.productcard__image2 {
+    width: 100%;
+    height: 168px;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
 .flxzqprdq {
     color: var(--text-muted);
     font-size: 0.875rem;
