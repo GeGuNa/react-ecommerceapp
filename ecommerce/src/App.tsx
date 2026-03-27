@@ -168,11 +168,11 @@ function App() {
       	<Route path="/OurStory" element={<OurStory />} />
        	<Route path="/Category" element={<Category />} />
        	<Route path="/Products" element={<ProductListing />} />
-        	<Route path="/AllProducts" element={<AllProducts />} />
-         	<Route path="/Collections" element={<Collections />} />
-     		 <Route path="/BestSellers" element={<BestSellers />} />
-     		   <Route path="/NewArrivals" element={<NewArrivals />} />
-     		         		       		     		     		      		     		
+			<Route path="/AllProducts" element={<AllProducts />} />
+			<Route path="/Collections" element={<Collections />} />
+			<Route path="/BestSellers" element={<BestSellers />} />
+			<Route path="/NewArrivals" element={<NewArrivals />} />
+     		         		       		     		     				
      		
      		
      		
