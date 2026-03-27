@@ -23,6 +23,7 @@ import ProductListing from './components/List'
 import AllProducts from './components/AllProducts'
 import Collections from './components/Collections'
 import BestSellers from './components/BestSellers'
+import NewArrivals from './components/NewArrivals'
 
 
 
@@ -170,6 +171,7 @@ function App() {
         	<Route path="/AllProducts" element={<AllProducts />} />
          	<Route path="/Collections" element={<Collections />} />
      		 <Route path="/BestSellers" element={<BestSellers />} />
+     		   <Route path="/NewArrivals" element={<NewArrivals />} />
      		         		       		     		     		      		     		
      		
      		

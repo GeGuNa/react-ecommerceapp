@@ -34,9 +34,9 @@ return (<>
                 <div className="footer-col">
                     <h4>Shop</h4>
                     <ul>
-                        <li><Link to="/">All Products</Link></li>
-                        <li><Link to="/">Collections</Link></li>
-                        <li><Link to="/">New Arrivals</Link></li>
+                        <li><Link to="/AllProducts">All Products</Link></li>
+                        <li><Link to="/Collections">Collections</Link></li>
+                        <li><Link to="/NewArrivals">New Arrivals</Link></li>
                         <li><Link to="/BestSellers">Best Sellers</Link></li>
                     </ul>
                 </div>
