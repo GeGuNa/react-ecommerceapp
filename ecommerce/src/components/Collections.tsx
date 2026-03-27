@@ -148,8 +148,7 @@ export default function Collections() {
                     placeholder="Search collection..."
                     value={keywordFilter}
                     onChange={(e) => setKeywordFilter(e.target.value)}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-violet-500 transition"
-                  />
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-violet-500 transition"/>
                 </div>
                 <div className="w-32">
                   <label className="block text-sm font-semibold text-gray-700 mb-2">Min Price</label>
@@ -158,8 +157,7 @@ export default function Collections() {
                     placeholder="$0"
                     value={priceMin}
                     onChange={(e) => setPriceMin(e.target.value)}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-violet-500 transition"
-                  />
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-violet-500 transition"/>
                 </div>
                 <div className="w-32">
                   <label className="block text-sm font-semibold text-gray-700 mb-2">Max Price</label>
@@ -168,8 +166,7 @@ export default function Collections() {
                     placeholder="$∞"
                     value={priceMax}
                     onChange={(e) => setPriceMax(e.target.value)}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-violet-500 transition"
-                  />
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-violet-500 transition"/>
                 </div>
                 <button
                   onClick={() => { setKeywordFilter(''); setPriceMin(''); setPriceMax(''); }}

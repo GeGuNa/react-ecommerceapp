@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { Routes, Route, Link, useLocation } from "react-router-dom";
-
 import { useTheme } from './context/Context'
 import Navig from './components/Nav'
 import Header from './components/Header'
@@ -150,7 +149,7 @@ function App() {
 
   return (<>
   
- {/* <ScrollToTop />*/}
+ {/*<ScrollToTop />*/}
   
   
   	<Routes>
@@ -172,10 +171,6 @@ function App() {
 			<Route path="/Collections" element={<Collections />} />
 			<Route path="/BestSellers" element={<BestSellers />} />
 			<Route path="/NewArrivals" element={<NewArrivals />} />
-     		         		       		     		     				
-     		
-     		
-     		
      		<Route path="*" element={<Error/>} />
   	</Routes>
  </>)

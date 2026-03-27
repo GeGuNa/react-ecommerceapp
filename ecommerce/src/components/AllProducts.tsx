@@ -164,8 +164,7 @@ export default function AllProducts() {
                   placeholder="Find products..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full px-4 py-3 pl-10 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-primary transition"
-                />
+                  className="w-full px-4 py-3 pl-10 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-primary transition"/>
                 <i className="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
               </div>
             </div>
@@ -190,8 +189,7 @@ export default function AllProducts() {
                       type="checkbox"
                       checked={selectedCategories.includes(cat.id)}
                       onChange={() => toggleCategory(cat.id)}
-                      className="w-5 h-5 rounded border-2 border-gray-300 text-primary focus:ring-primary"
-                    />
+                      className="w-5 h-5 rounded border-2 border-gray-300 text-primary focus:ring-primary"/>
                     <span className="group-hover:text-primary transition">{cat.name}</span>
                     <span className="ml-auto text-xs text-gray-400">
                       {products.filter(p => p.categoryId === cat.id).length}
@@ -221,8 +219,7 @@ export default function AllProducts() {
                       type="checkbox"
                       checked={selectedPriceRanges.includes(range.id)}
                       onChange={() => togglePriceRange(range.id)}
-                      className="w-5 h-5 rounded border-2 border-gray-300 text-primary focus:ring-primary"
-                    />
+                      className="w-5 h-5 rounded border-2 border-gray-300 text-primary focus:ring-primary"/>
                     <span className="group-hover:text-primary transition">{range.label}</span>
                   </label>
                 ))}
@@ -249,8 +246,7 @@ export default function AllProducts() {
                       type="checkbox"
                       checked={selectedMaterials.includes(material)}
                       onChange={() => toggleMaterial(material)}
-                      className="w-5 h-5 rounded border-2 border-gray-300 text-primary focus:ring-primary"
-                    />
+                      className="w-5 h-5 rounded border-2 border-gray-300 text-primary focus:ring-primary"/>
                     <span className="group-hover:text-primary transition">{material}</span>
                   </label>
                 ))}
@@ -264,8 +260,7 @@ export default function AllProducts() {
                   type="checkbox"
                   checked={inStockOnly}
                   onChange={(e) => setInStockOnly(e.target.checked)}
-                  className="w-5 h-5 rounded border-2 border-gray-300 text-primary focus:ring-primary"
-                />
+                  className="w-5 h-5 rounded border-2 border-gray-300 text-primary focus:ring-primary"/>
                 <span className="font-medium">In Stock Only</span>
               </label>
             </div>
@@ -320,9 +315,7 @@ export default function AllProducts() {
                       <div className="relative">
                         <img src={product.image} alt={product.name} className="w-full h-52 object-cover" />
                         {!product.inStock && (
-                          <span className="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded font-semibold">
-                            Out of Stock
-                          </span>
+                          <span className="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded font-semibold">Out of Stock</span>
                         )}
                         {product.material && (
                           <span className="absolute bottom-2 left-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
