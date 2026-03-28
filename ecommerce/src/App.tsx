@@ -28,6 +28,7 @@ import ReviewsListPage from './components/ReviewsListPage'
 import AddReview from './components/AddReview'
 import SignIn from './components/SignIn'
 import SignUp from './components/SignUp'
+import ForgotPassword from './components/ForgotPassword'
 
 
 
@@ -181,7 +182,8 @@ function App() {
 			<Route path="/AddReview/:id" element={<AddReview />} />
 			<Route path="/SignIn" element={<SignIn />} />
 			<Route path="/SignUp" element={<SignUp />} />
-									
+			<Route path="/ForgotPassword" element={<ForgotPassword />} />
+										
 			
 			
 			
