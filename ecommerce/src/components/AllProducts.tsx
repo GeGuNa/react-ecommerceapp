@@ -139,7 +139,7 @@ export default function AllProducts() {
      
       <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-16 mrg81frhero">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">All Products</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 clrBdflq3qtxtwht">All Products</h1>
           <p className="text-xl text-gray-300 mb-6">Complete furniture catalog with advanced filtering</p>
           <div className="inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
             <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
@@ -148,7 +148,7 @@ export default function AllProducts() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-8 mrtpzqoq332">
         <div className="flex flex-col lg:flex-row gap-8">
           
           <aside className="lg:w-1/4 space-y-6">
@@ -313,7 +313,7 @@ export default function AllProducts() {
                   <div key={product.id} className="bg-white rounded-2xl shadow-lg overflow-hidden transition hover:shadow-xl hover:-translate-y-1 border border-gray-100">
                     <Link to={`/product/${product.id}`}>
                       <div className="relative">
-                        <img src={product.image} alt={product.name} className="w-full h-52 object-cover" />
+                        <img src={product.image} alt={product.name} className="productcard__image2" />
                         {!product.inStock && (
                           <span className="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded font-semibold">Out of Stock</span>
                         )}
@@ -348,7 +348,7 @@ export default function AllProducts() {
           </div>
         </div>
       </div>
-
+ 
       <Footer />
     </>
   );

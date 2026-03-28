@@ -43,7 +43,7 @@ const products: Product[] = [
 ];
 
 export default function Collections() {
-  const [selectedCollection, setSelectedCollection] = useState<string | null>(null);
+  const [selectedCollection, setSelectedCollection] = useState<string | null>('modern');
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [keywordFilter, setKeywordFilter] = useState('');
   const [priceMin, setPriceMin] = useState('');
@@ -79,23 +79,21 @@ export default function Collections() {
       <Header />
 
       
-      <div className="relative h-80 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-purple-700"></div>
-        <div className="absolute inset-0 opacity-20">
-          <div className="w-full h-full" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")' }}></div>
-        </div>
-        <div className="relative container mx-auto px-4 h-full flex items-center">
-          <div className="text-white">
-            <h1 className="text-5xl font-bold mb-4">Collections</h1>
-            <p className="text-xl opacity-90 max-w-xl">Curated styles for every taste. Find your perfect aesthetic.</p>
-          </div>
-        </div>
-      </div>
+<div class="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-16 mrg81frhero"><div class="container mx-auto px-4 text-center">
+
+<h1 class="text-4xl md:text-5xl font-bold mb-4 clrBdflq3qtxtwht">Collections</h1>
+<p class="text-xl text-gray-300 mb-6">Curated styles for every taste. Find your perfect aesthetic.</p>
+
+<div class="inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full"><span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span><span class="text-sm">{products.length} Products Available</span></div>
+
+</div>
+
+</div>
 
       <div className="container mx-auto px-4 py-8">
         
-        {!selectedCollection && (
-          <div className="mb-12">
+    
+          <div className="mb-12 mt-4">
             <h2 className="text-2xl font-bold mb-6 text-gray-800">Browse by Collection</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
               {collections.map((collection) => (
@@ -105,26 +103,23 @@ export default function Collections() {
                   className="group relative rounded-2xl overflow-hidden h-48 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
                   <img src={collection.image} alt={collection.name} className="w-full h-full object-cover transition group-hover:scale-110" />
                   <div className={`absolute inset-0 bg-gradient-to-t ${collection.color} opacity-80 group-hover:opacity-90 transition`}></div>
-                  <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
+                  <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4 picns1q">
                     <i className={`fas ${collection.icon} text-3xl mb-2`}></i>
-                    <h3 className="font-bold text-lg">{collection.name}</h3>
+                    <h3 className="font-bold text-lg bctwhite">{collection.name}</h3>
                     <p className="text-sm opacity-80">{collection.productCount} items</p>
                   </div>
                 </button>
               ))}
             </div>
           </div>
-        )}
+        
 
       
         {selectedCollection && (
           <>
-          
+          <div class="mrtpzqoq332"></div>
             {selectedCollectionData && (
               <div className={`relative rounded-3xl overflow-hidden mb-8 bg-gradient-to-r ${selectedCollectionData.color} p-8 text-white`}>
-                <button onClick={() => setSelectedCollection(null)} className="absolute top-4 right-4 bg-white/20 hover:bg-white/30 px-4 py-2 rounded-full text-sm transition">
-                  ← Back to Collections
-                </button>
                 <div className="flex items-center gap-4">
                   <i className={`fas ${selectedCollectionData.icon} text-4xl`}></i>
                   <div>
@@ -136,7 +131,7 @@ export default function Collections() {
             )}
 
            
-            <div className="bg-gradient-to-r from-gray-50 to-white rounded-2xl shadow-md p-6 mb-8 border border-gray-100">
+            <div className="bg-gradient-to-r from-gray-50 to-white rounded-2xl shadow-md p-6 mb-8 border border-gray-100 ">
               <div className="flex flex-wrap items-end gap-4">
                 <div className="flex-1 min-w-64">
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
@@ -177,19 +172,19 @@ export default function Collections() {
             </div>
 
          
-            <div className="flex justify-between items-center mb-6">
+            <div className="flex justify-between items-center mb-6 ">
               <p className="text-gray-600">
-                <span className="font-bold text-violet-600 text-lg">{filteredProducts.length}</span> products in this collection
+                <span className="font-bold text-black text-lg">{filteredProducts.length}</span> products in this collection
               </p>
               <div className="flex bg-gray-100 rounded-xl p-1">
                 <button
                   onClick={() => setViewMode('grid')}
-                  className={`px-4 py-2 rounded-lg transition ${viewMode === 'grid' ? 'bg-white shadow text-violet-600' : 'text-gray-600'}`}>
+                  className={`px-4 py-2 rounded-lg transition ${viewMode === 'grid' ? 'bg-white shadow text-black' : 'text-gray-600'}`}>
                   <i className="fas fa-th-large"></i>
                 </button>
                 <button
                   onClick={() => setViewMode('list')}
-                  className={`px-4 py-2 rounded-lg transition ${viewMode === 'list' ? 'bg-white shadow text-violet-600' : 'text-gray-600'}`}>
+                  className={`px-4 py-2 rounded-lg transition ${viewMode === 'list' ? 'bg-white shadow text-black' : 'text-gray-600'}`}>
                   <i className="fas fa-list"></i>
                 </button>
               </div>
@@ -206,13 +201,13 @@ export default function Collections() {
                 {filteredProducts.map((product) => (
                   <Link key={product.id} to={`/product/${product.id}`} className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
                     <div className="relative overflow-hidden">
-                      <img src={product.image} alt={product.name} className="w-full h-48 object-cover transition group-hover:scale-105" />
+                      <img src={product.image} alt={product.name} className="productcard__image2 transition group-hover:scale-105" />
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition"></div>
                     </div>
                     <div className="p-4">
-                      <h3 className="font-bold text-gray-800 group-hover:text-violet-600 transition">{product.name}</h3>
+                      <h3 className="font-bold text-gray-800 group-hover:text-black transition">{product.name}</h3>
                       <p className="text-sm text-gray-500 mb-2">{product.description}</p>
-                      <span className="text-violet-600 font-bold text-lg">${product.price.toFixed(2)}</span>
+                      <span className="product-price font-bold text-lg">${product.price.toFixed(2)}</span>
                     </div>
                   </Link>
                 ))}
@@ -221,11 +216,11 @@ export default function Collections() {
               <div className="space-y-4">
                 {filteredProducts.map((product) => (
                   <Link key={product.id} to={`/product/${product.id}`} className="flex bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
-                    <img src={product.image} alt={product.name} className="w-48 h-48 object-cover" />
+                    <img src={product.image} alt={product.name} className="pftsz1q object-cover" />
                     <div className="flex-1 p-6 flex flex-col justify-center">
                       <h3 className="font-bold text-xl text-gray-800 mb-2">{product.name}</h3>
                       <p className="text-gray-500 mb-4">{product.description}</p>
-                      <span className="text-violet-600 font-bold text-2xl">${product.price.toFixed(2)}</span>
+                      <span className="product-price font-bold text-2xl">${product.price.toFixed(2)}</span>
                     </div>
                   </Link>
                 ))}
@@ -234,6 +229,9 @@ export default function Collections() {
           </>
         )}
       </div>
+      
+      
+      <div class="mrtpzqoq332"></div>
 
       <Footer />
     </>

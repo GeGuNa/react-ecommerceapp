@@ -23,6 +23,9 @@ import AllProducts from './components/AllProducts'
 import Collections from './components/Collections'
 import BestSellers from './components/BestSellers'
 import NewArrivals from './components/NewArrivals'
+import Product from './components/Product'
+import ReviewsListPage from './components/ReviewsListPage'
+import AddReview from './components/AddReview'
 
 
 
@@ -167,10 +170,17 @@ function App() {
       	<Route path="/OurStory" element={<OurStory />} />
        	<Route path="/Category" element={<Category />} />
        	<Route path="/Products" element={<ProductListing />} />
+       	<Route path="/Product/:id" element={<Product />} />
+       	<Route path="/ReviewsListPage/:id" element={<ReviewsListPage />} />
 			<Route path="/AllProducts" element={<AllProducts />} />
 			<Route path="/Collections" element={<Collections />} />
 			<Route path="/BestSellers" element={<BestSellers />} />
 			<Route path="/NewArrivals" element={<NewArrivals />} />
+			<Route path="/AddReview/:id" element={<AddReview />} />
+					
+			
+			
+			
      		<Route path="*" element={<Error/>} />
   	</Routes>
  </>)

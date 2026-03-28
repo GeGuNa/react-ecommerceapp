@@ -94,7 +94,7 @@ export default function BestSellers() {
                   🔥 Trending Now
                 </span>
               </div>
-              <h1 className="text-5xl font-bold mb-2">Best Sellers</h1>
+              <h1 className="text-5xl font-bold mb-2 clrBdflq3qtxtwht">Best Sellers</h1>
               <p className="text-xl opacity-90">Customer favorites that can't be missed</p>
             </div>
             <div className="text-center md:text-right">

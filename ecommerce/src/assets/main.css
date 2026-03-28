@@ -627,17 +627,25 @@ position: absolute; top: 16px; left: 16px;
 .inputFl {background: #fff;} 
 .Sldbfqqdef {background: rgb(44 62 51);color:#fff;} 
 .clrBdflq {color:#000;}
+.clrBdflq3qtxtwht {color:#fff;}
 .bg-whTiq { background: #fff; }
 .mtqqaz  { margin-top:5rem; margin-bottom:5rem; }
+.mtqqa3z  {  padding-bottom:5rem; }
+.mrg81frher3o {     padding-top: 100px; }
 .mrg81frhero {     margin-top: 81px; }
-
+.mtbrottop1q { border-top-color: #e4e4e4; }
+.mrtpzqoq332  { margin-top:2rem; margin-bottom:2rem; } 
 .mrbtsqq {margin-bottom:2rem;} 
+.bctwhite {color:#fff !important; }
+.picns1q i::before{ color:red; }
 .productcard__image2 {
     width: 100%;
     height: 168px;
     object-fit: cover;
     transition: transform var(--transition-slow);
 }
+.pftsz1q {    width: 250px;
+    height: 182px;}
 .pslflexgap1{ 
 display:flex;
     align-items: center;

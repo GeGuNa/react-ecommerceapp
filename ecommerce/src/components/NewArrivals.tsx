@@ -92,31 +92,36 @@ export default function NewArrivals() {
       <Header />
 
      
-      <div className="bg-gradient-to-br from-emerald-500 via-green-500 to-teal-600 text-white py-20 mrg81frhero">
+      <div className="PageHero bger1">
         <div className="container mx-auto px-4 text-center">
           <div className="inline-block mb-4">
-            <span className="bg-white/20 backdrop-blur px-4 py-2 rounded-full text-sm font-semibold animate-pulse">
+            <span className="bg-white backdrop-blur px-4 py-2 rounded-full text-sm font-semibold animate-pulse">
               Fresh Drops Weekly
             </span>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">New Arrivals</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-4 clrBdflq3qtxtwht">New Arrivals</h1>
           <p className="text-xl opacity-90 max-w-2xl mx-auto">Be the first to discover our latest pieces. Updated every week.</p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
+          
             <button
               onClick={() => setDateRange('week')}
-              className={`px-6 py-3 rounded-full font-semibold transition ${dateRange === 'week' ? 'bg-white text-green-600' : 'bg-white/20 hover:bg-white/30'}`}>
+              className={`px-6 py-3 rounded-full font-semibold transition ${dateRange === 'week' ? 'bg-black text-white ' : 'bg-white '}`}>
                 This Week
             </button>
+            
             <button
               onClick={() => setDateRange('month')}
-              className={`px-6 py-3 rounded-full font-semibold transition ${dateRange === 'month' ? 'bg-white text-green-600' : 'bg-white/20 hover:bg-white/30'}`}>
+              className={`px-6 py-3 rounded-full font-semibold transition ${dateRange === 'month' ? 'bg-black text-white' : 'bg-white  '}`}>
                 This Month
             </button>
+            
             <button
               onClick={() => setDateRange('all')}
-              className={`px-6 py-3 rounded-full font-semibold transition ${dateRange === 'all' ? 'bg-white text-green-600' : 'bg-white/20 hover:bg-white/30'}`}>
+              className={`px-6 py-3 rounded-full font-semibold transition ${dateRange === 'all' ? 'bg-black text-white' : 'bg-white  '}`}>
                 All Time
             </button>
+            
+            
           </div>
         </div>
       </div>
@@ -126,10 +131,10 @@ export default function NewArrivals() {
          
           <aside className="lg:w-1/4 space-y-6">
       
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6 border-2 border-green-100">
+            <div className="bg-white rounded-2xl p-6">
              
              
-             <h3 class="font-bold text-lg mb-4 text-green-800 flex gap-2"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.25 2a8.25 8.25 0 0 1 6.34 13.53l5.69 5.69a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215l-5.69-5.69A8.25 8.25 0 1 1 10.25 2ZM3.5 10.25a6.75 6.75 0 1 0 13.5 0 6.75 6.75 0 0 0-13.5 0Z"></path></svg> Find New Items</h3>
+             <h3 class="font-bold text-lg mb-4  flex gap-2"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.25 2a8.25 8.25 0 0 1 6.34 13.53l5.69 5.69a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215l-5.69-5.69A8.25 8.25 0 1 1 10.25 2ZM3.5 10.25a6.75 6.75 0 1 0 13.5 0 6.75 6.75 0 0 0-13.5 0Z"></path></svg> Find New Items</h3>
              
              
               <input
@@ -142,18 +147,18 @@ export default function NewArrivals() {
 
          
             <div className="bg-white rounded-2xl shadow-lg p-6">
-              <h3 className="font-bold text-lg mb-4 flex gap-2"><svg stroke="yellow" fill="yellow" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M464 128H272l-64-64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48z"></path></svg> Categories</h3>
+              <h3 className="font-bold text-lg mb-4 flex gap-2"><svg stroke="green" fill="green" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M464 128H272l-64-64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48z"></path></svg> Categories</h3>
               <div className="space-y-2">
                 <button
                   onClick={() => setSelectedCategory(null)}
-                  className={`w-full text-left px-4 py-2 rounded-lg transition ${!selectedCategory ? 'bg-green-500 text-white' : 'hover:bg-green-50'}`}>
+                  className={`w-full text-left px-4 py-2 rounded-lg transition ${!selectedCategory ? 'bg-black text-white' : 'hover:bg-gray-200'}`}>
                   All Categories
                 </button>
                 {categories.map(cat => (
                   <button
                     key={cat.id}
                     onClick={() => setSelectedCategory(cat.id)}
-                    className={`w-full text-left px-4 py-2 rounded-lg transition ${selectedCategory === cat.id ? 'bg-green-500 text-white' : 'hover:bg-green-50'}`}>
+                    className={`w-full text-left px-4 py-2 rounded-lg transition ${selectedCategory === cat.id ? 'bg-black text-white' : 'hover:bg-gray-200'}`}>
                     {cat.name}
                   </button>
                 ))}
@@ -161,29 +166,7 @@ export default function NewArrivals() {
             </div>
 
          
-            <div className="bg-white rounded-2xl shadow-lg p-6">
-              <div className="flex justify-between items-center mb-4">
-                <h3 className="font-bold text-lg flex gap-2"><svg stroke="green" fill="green" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M0 80L0 229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7L48 32C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"></path></svg> Tags</h3>
-                <label className="flex items-center gap-2 text-sm">
-                  <input type="checkbox" checked={showOnlyTagged} onChange={(e) => setShowOnlyTagged(e.target.checked)} className="rounded" />
-                  <span>Tagged only</span>
-                </label>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {tagOptions.map(tag => (
-                  <button
-                    key={tag}
-                    onClick={() => toggleTag(tag)}
-                    className={`px-3 py-1 rounded-full text-sm font-medium transition ${
-                      selectedTags.includes(tag)
-                        ? 'bg-green-500 text-white'
-                        : 'bg-gray-100 hover:bg-green-100 text-gray-700'
-                    }`}>
-                    {tag}
-                  </button>
-                ))}
-              </div>
-            </div>
+           
 
        
       
@@ -194,7 +177,7 @@ export default function NewArrivals() {
          
             <div className="bg-white rounded-2xl shadow-lg p-4 mb-6 flex items-center justify-between">
               <p className="text-gray-600 pslflexgap1">
-                <span className="font-bold text-green-600 text-2xl">{filteredProducts.length}</span> new products
+                <span className="font-bold  text-2xl">{filteredProducts.length}</span> new products
               </p>
               <div className="flex items-center gap-2 text-sm text-gray-500">
                 <i className="fas fa-clock"></i>
@@ -219,7 +202,7 @@ export default function NewArrivals() {
                     <div className="relative md:w-72 h-48 md:h-auto flex-shrink-0">
                       <img src={product.image} alt={product.name} className="productcard__image23" />
                       <div className="absolute top-4 left-4">
-                        <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold flex items-center gap-1">
+                        <span className="bg-black text-white px-3 py-1 rounded-full text-sm font-semibold flex items-center gap-1">
                           
                           NEW
                         </span>
@@ -229,10 +212,10 @@ export default function NewArrivals() {
                     <div className="flex-1 p-6">
                       <div className="flex items-start justify-between mb-2">
                         <div>
-                          <span className="text-xs text-green-600 font-semibold uppercase">{product.categoryName}</span>
-                          <h3 className="text-xl font-bold text-gray-800 group-hover:text-green-600 transition">{product.name}</h3>
+                          <span className="text-xs  font-semibold uppercase">{product.categoryName}</span>
+                          <h3 className="text-xl font-bold text-gray-800 group-hover: transition">{product.name}</h3>
                         </div>
-                        <span className="text-green-600 font-bold text-2xl">${product.price.toFixed(2)}</span>
+                        <span className=" font-bold text-2xl">${product.price.toFixed(2)}</span>
                       </div>
                       <p className="text-gray-600 mb-4">{product.description}</p>
                       <div className="flex items-center justify-between">
