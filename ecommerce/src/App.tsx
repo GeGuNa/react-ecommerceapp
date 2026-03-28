@@ -26,6 +26,7 @@ import NewArrivals from './components/NewArrivals'
 import Product from './components/Product'
 import ReviewsListPage from './components/ReviewsListPage'
 import AddReview from './components/AddReview'
+import SignIn from './components/SignIn'
 
 
 
@@ -177,6 +178,7 @@ function App() {
 			<Route path="/BestSellers" element={<BestSellers />} />
 			<Route path="/NewArrivals" element={<NewArrivals />} />
 			<Route path="/AddReview/:id" element={<AddReview />} />
+			<Route path="/SignIn" element={<SignIn />} />
 					
 			
 			
