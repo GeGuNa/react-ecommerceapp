@@ -26,7 +26,7 @@ return (<>
                     <ul>
                         <li><Link to="/contact">Contact Us</Link></li>
                         <li><Link to="/Shipping">Shipping Info</Link></li>
-                        <li><Link to="/return">Returns</Link></li>
+                        <li><Link to="/returns">Returns</Link></li>
                         <li><Link to="/">Size Guide</Link></li>
                         <li><Link to="/help">FAQ</Link></li>
                     </ul>
