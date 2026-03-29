@@ -52,7 +52,7 @@ return (<>
                     
                     
                     
-                    <button className="text-warm-800 hover:text-accent-600 transition">
+                    <button onClick={()=> handleRouting('/SignIn') } className="text-warm-800 hover:text-accent-600 transition pointer">
                         <i className="fas fa-user text-lg"></i>
                     </button>
                 </div>
